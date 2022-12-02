@@ -15,6 +15,7 @@
 		{ name: `Moderators`, slug: `` }
 	];
 	let current = '';
+	let search = '';
 </script>
 
 <p>Avatars from <a href="https://joeschmoe.io">joe schmoe</a></p>
@@ -25,7 +26,7 @@
 		<div class="input-section">
 			<div class="search-section">
 				<Search />
-				<input placeholder="Search users" type="text" />
+				<input bind:value={search} placeholder="Search users" type="text" />
 			</div>
 			<ul>
 				{#each categories as category}
