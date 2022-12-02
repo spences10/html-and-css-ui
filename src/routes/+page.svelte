@@ -1,4 +1,5 @@
 <script>
+	import Categories from '$lib/components/categories.svelte'
 	import PersonCard from '$lib/components/person-card.svelte'
 	import Search from '$lib/icons/search.svelte'
 
@@ -7,15 +8,8 @@
 	 */
 	export let data
 	let { people } = data
-	let categories = [
-		{ name: `Reputation`, slug: `` },
-		{ name: `New users`, slug: `` },
-		{ name: `Voters`, slug: `` },
-		{ name: `Editors`, slug: `` },
-		{ name: `Moderators`, slug: `` },
-	]
-	let current = ''
 	let search = ''
+	let current = ''
 </script>
 
 <p>Avatars from <a href="https://joeschmoe.io">joe schmoe</a></p>
@@ -32,19 +26,7 @@
 					type="text"
 				/>
 			</div>
-			<ul>
-				{#each categories as category}
-					<li>
-						<button
-							class="category-button"
-							class:selected={current === category.name}
-							on:click={() => (current = category.name)}
-						>
-							{category.name}
-						</button>
-					</li>
-				{/each}
-			</ul>
+			<Categories {current} />
 		</div>
 	</div>
 	<div class="people-grid">
@@ -65,10 +47,7 @@
 		line-height: 2rem;
 		margin-bottom: 1.25rem;
 	}
-	ul {
-		display: flex;
-		list-style: none;
-	}
+
 	input {
 		height: 3rem;
 		padding-left: 1rem;
@@ -81,27 +60,7 @@
 		border-radius: 0.5rem;
 		padding-left: 2.25rem;
 	}
-	.category-button {
-		height: 3rem;
-		padding: 0.5rem 1rem;
-		display: inline-flex;
-		font-size: 1rem;
-		flex-shrink: 0;
-		cursor: pointer;
-		user-select: none;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		border-color: transparent;
-		background-color: white;
-		border-radius: 0.35rem;
-	}
-	.category-button:hover {
-		background-color: #f7fafc;
-	}
-	.category-button.selected:hover {
-		background-color: #879dff;
-	}
+
 	.input-section {
 		display: flex;
 		justify-content: space-between;
@@ -126,13 +85,5 @@
 		.people-grid {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
-	}
-	button {
-		display: block;
-	}
-
-	.selected {
-		background-color: #879dff;
-		color: white;
 	}
 </style>
