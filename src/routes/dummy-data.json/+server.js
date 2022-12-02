@@ -6,44 +6,44 @@ export function GET() {
 			img: `https://joeschmoe.io/api/v1/jess`,
 			location: 'Troy, MI',
 			tags: [`clothes`, `stem`],
-			roles: [`new users`]
+			roles: [`new users`],
 		},
 		{
 			name: 'Jesus Weiss',
 			img: `https://joeschmoe.io/api/v1/jack`,
 			location: 'Fort Worth, TX',
 			tags: [`headset`, `gadget`, `speed`, `winter`],
-			roles: [`new users`]
+			roles: [`new users`],
 		},
 		{
 			name: 'Annie Rice',
 			img: `https://joeschmoe.io/api/v1/jenni`,
 			location: 'Austin, TX',
 			tags: [`road`, `mountain`, `trip`, `earth`, `nature`],
-			roles: [`new users`]
+			roles: [`new users`],
 		},
 		{
 			name: 'Robert Brower',
 			img: `https://joeschmoe.io/api/v1/jed`,
 			location: 'Cincinnati, OH',
 			tags: [`maintenance`, `gears`, `farmers`, `repair`],
-			roles: [`new users`]
+			roles: [`new users`],
 		},
 		{
 			name: 'Amy Campbell',
 			img: `https://joeschmoe.io/api/v1/jazebelle`,
 			location: 'Warrior, AL',
 			tags: [`music`, `discs`],
-			roles: [`new users`]
+			roles: [`new users`],
 		},
 		{
 			name: 'Anthony S. Morin',
 			img: `https://joeschmoe.io/api/v1/jana`,
 			location: 'Lyndhurst, NJ',
 			tags: [`vintage`, `electric`],
-			roles: [`new users`]
-		}
-	];
+			roles: [`new users`],
+		},
+	]
 
-	return new Response(JSON.stringify(data, null, 2));
+	return new Response(JSON.stringify(data, null, 2))
 }

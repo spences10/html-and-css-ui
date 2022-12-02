@@ -1,21 +1,21 @@
 <script>
-	import PersonCard from '$lib/components/person-card.svelte';
-	import Search from '$lib/icons/search.svelte';
+	import PersonCard from '$lib/components/person-card.svelte'
+	import Search from '$lib/icons/search.svelte'
 
 	/**
 	 * @type {import('./$types').PageData}
 	 */
-	export let data;
-	let { people } = data;
+	export let data
+	let { people } = data
 	let categories = [
 		{ name: `Reputation`, slug: `` },
 		{ name: `New users`, slug: `` },
 		{ name: `Voters`, slug: `` },
 		{ name: `Editors`, slug: `` },
-		{ name: `Moderators`, slug: `` }
-	];
-	let current = '';
-	let search = '';
+		{ name: `Moderators`, slug: `` },
+	]
+	let current = ''
+	let search = ''
 </script>
 
 <p>Avatars from <a href="https://joeschmoe.io">joe schmoe</a></p>
@@ -26,7 +26,11 @@
 		<div class="input-section">
 			<div class="search-section">
 				<Search />
-				<input bind:value={search} placeholder="Search users" type="text" />
+				<input
+					bind:value={search}
+					placeholder="Search users"
+					type="text"
+				/>
 			</div>
 			<ul>
 				{#each categories as category}

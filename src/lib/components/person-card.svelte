@@ -1,6 +1,6 @@
 <script>
-	export let person;
-	let { img: src, name, location, tags, roles } = person;
+	export let person
+	let { img: src, name, location, tags, roles } = person
 </script>
 
 <figure>
