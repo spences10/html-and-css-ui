@@ -11,7 +11,7 @@
 		<div class="details-wrapper">
 			<h2>{name}</h2>
 			<p>{location}</p>
-			<div class='tags-wrapper'>
+			<div class="tags-wrapper">
 				{#each tags as tag}
 					<span>{tag}</span>
 				{/each}
@@ -34,20 +34,22 @@
 	}
 	figure:hover {
 		border: solid #d5d7e0 1px;
-		box-shadow: 0 0 0.5rem 0.1rem #d5d7e0;
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+			0 10px 10px -5px rgba(0, 0, 0, 0.04);
 	}
 	figcaption {
 		display: flex;
 		justify-content: start;
 		margin-bottom: 2rem;
+		user-select: none;
 	}
 	.details-wrapper {
 		margin-top: 2.5rem;
 	}
-	.details-wrapper h2{
-		margin-bottom: .1rem;
+	.details-wrapper h2 {
+		margin-bottom: 0.1rem;
 	}
-	.details-wrapper p{
+	.details-wrapper p {
 		margin-bottom: 1rem;
 	}
 	.tags-wrapper {

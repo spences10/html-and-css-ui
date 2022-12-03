@@ -1,7 +1,7 @@
 <script>
 	import Categories from '$lib/components/categories.svelte'
 	import PersonCard from '$lib/components/person-card.svelte'
-	import Search from '$lib/icons/search.svelte'
+	import SearchIcon from '$lib/icons/search-icon.svelte'
 
 	/**
 	 * @type {import('./$types').PageData}
@@ -19,7 +19,7 @@
 		<h2>Users</h2>
 		<div class="input-section">
 			<div class="search-section">
-				<Search />
+				<SearchIcon />
 				<input
 					bind:value={search}
 					placeholder="Search users"
@@ -41,6 +41,7 @@
 		background: white;
 		padding: 4rem;
 		border-radius: 0.5rem;
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
 	}
 	h2 {
 		font-size: 1.5rem;
