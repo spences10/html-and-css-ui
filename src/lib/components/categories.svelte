@@ -1,4 +1,6 @@
 <script>
+	import { categoryStore } from '$lib/store'
+
 	let categories = [
 		{ name: `Reputation`, slug: `` },
 		{ name: `New users`, slug: `` },
@@ -7,18 +9,32 @@
 		{ name: `Moderators`, slug: `` },
 	]
 	export let current = ''
+	const updateCategory = (/** @type {string} */ name) => {
+		current = name
+		$categoryStore = name
+	}
 </script>
 
 <ul>
-	{#each categories as category}
+	{#each categories as { name }}
 		<li>
-			<button
-				class="category-button"
-				class:selected={current === category.name}
-				on:click={() => (current = category.name)}
-			>
-				{category.name}
-			</button>
+			{#if current === '' && name === 'New users'}
+				<button
+					class="category-button"
+					class:active={true}
+					on:click={() => updateCategory(name)}
+				>
+					{name}
+				</button>
+			{:else}
+				<button
+					class="category-button"
+					class:active={current === name}
+					on:click={() => updateCategory(name)}
+				>
+					{name}
+				</button>
+			{/if}
 		</li>
 	{/each}
 </ul>
@@ -46,13 +62,13 @@
 	.category-button:hover {
 		background-color: #f7fafc;
 	}
-	.category-button.selected:hover {
+	.category-button.active:hover {
 		background-color: #879dff;
 	}
 	button {
 		display: block;
 	}
-	.selected {
+	.active {
 		background-color: #879dff;
 		color: white;
 	}
