@@ -31,6 +31,7 @@
 	figure {
 		border: solid #fafa 1px;
 		border-radius: 0.5rem;
+		cursor: pointer;
 	}
 	figure:hover {
 		border: solid #d5d7e0 1px;
