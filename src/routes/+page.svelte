@@ -41,7 +41,7 @@
 		background: white;
 		padding: 4rem;
 		border-radius: 0.5rem;
-		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 	}
 	h2 {
 		font-size: 1.5rem;
