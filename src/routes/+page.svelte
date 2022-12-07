@@ -12,7 +12,13 @@
 	let current = ''
 </script>
 
-<p>Avatars from <a href="https://joeschmoe.io">joe schmoe</a></p>
+<p>
+	Avatars from <a
+		href="https://avatars.dicebear.com/styles/adventurer"
+	>
+		DiceBear Avatars
+	</a>
+</p>
 
 <section>
 	<div>
