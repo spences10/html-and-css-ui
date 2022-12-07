@@ -43,6 +43,7 @@
 	ul {
 		display: flex;
 		list-style: none;
+		flex-wrap: wrap;
 	}
 	.category-button {
 		height: 3rem;
@@ -71,5 +72,15 @@
 	.active {
 		background-color: #879dff;
 		color: white;
+	}
+	@media (min-width: 768px) {
+		.people-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+	@media (min-width: 1024px) {
+		.people-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
 	}
 </style>

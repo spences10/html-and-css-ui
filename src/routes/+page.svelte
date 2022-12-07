@@ -70,6 +70,7 @@
 
 	.input-section {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-bottom: 1.25rem;
 	}
