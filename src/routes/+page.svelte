@@ -20,7 +20,7 @@
 	</a>
 </p>
 
-<section>
+<section class="main-wrapper">
 	<div>
 		<h2>Users</h2>
 		<div class="input-section">
@@ -43,12 +43,6 @@
 </section>
 
 <style>
-	section {
-		background: white;
-		padding: 4rem;
-		border-radius: 0.5rem;
-		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-	}
 	h2 {
 		font-size: 1.5rem;
 		line-height: 2rem;
@@ -67,7 +61,12 @@
 		border-radius: 0.5rem;
 		padding-left: 2.25rem;
 	}
-
+	.main-wrapper {
+		background: white;
+		padding: 4rem;
+		border-radius: 0.5rem;
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+	}
 	.input-section {
 		display: flex;
 		flex-wrap: wrap;
@@ -84,12 +83,26 @@
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 		gap: 2.5rem;
 	}
+	@media (min-width: 320px) {
+		.main-wrapper {
+			padding: 1rem;
+		}
+		.people-grid {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+		}
+	}
 	@media (min-width: 768px) {
+		.main-wrapper {
+			padding: 1rem;
+		}
 		.people-grid {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 	}
 	@media (min-width: 1024px) {
+		.main-wrapper {
+			padding: 3rem;
+		}
 		.people-grid {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
