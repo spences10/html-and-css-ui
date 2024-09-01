@@ -34,7 +34,7 @@ devDependencies:
     version: 4.2.18
   svelte-check:
     specifier: ^3.0.0
-    version: 3.8.5(svelte@4.2.18)
+    version: 3.8.6(svelte@4.2.18)
   typescript:
     specifier: ^5.0.0
     version: 5.5.4
@@ -1347,7 +1347,7 @@ packages:
   /magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.0
+      '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
   /magic-string@0.30.11:
@@ -1735,8 +1735,8 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-check@3.8.5(svelte@4.2.18):
-    resolution: {integrity: sha512-3OGGgr9+bJ/+1nbPgsvulkLC48xBsqsgtc8Wam281H4G9F5v3mYGa2bHRsPuwHC5brKl4AxJH95QF73kmfihGQ==}
+  /svelte-check@3.8.6(svelte@4.2.18):
+    resolution: {integrity: sha512-ij0u4Lw/sOTREP13BdWZjiXD/BlHE6/e2e34XzmVmsp5IN4kVa3PWP65NM32JAgwjZlwBg/+JtiNV1MM8khu0Q==}
     hasBin: true
     peerDependencies:
       svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
