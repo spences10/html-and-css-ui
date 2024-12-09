@@ -34,10 +34,10 @@ devDependencies:
     version: 4.2.19
   svelte-check:
     specifier: ^4.0.9
-    version: 4.0.9(svelte@4.2.19)(typescript@5.6.3)
+    version: 4.0.9(svelte@4.2.19)(typescript@5.7.2)
   typescript:
     specifier: ^5.6.3
-    version: 5.6.3
+    version: 5.7.2
   vite:
     specifier: ^5.4.11
     version: 5.4.11
@@ -1500,7 +1500,7 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-check@4.0.9(svelte@4.2.19)(typescript@5.6.3):
+  /svelte-check@4.0.9(svelte@4.2.19)(typescript@5.7.2):
     resolution: {integrity: sha512-SVNCz2L+9ZELGli7G0n3B3QE5kdf0u27RtKr2ZivWQhcWIXatZxwM4VrQ6AiA2k9zKp2mk5AxkEhdjbpjv7rEw==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
@@ -1514,7 +1514,7 @@ packages:
       picocolors: 1.1.0
       sade: 1.8.1
       svelte: 4.2.19
-      typescript: 5.6.3
+      typescript: 5.7.2
     transitivePeerDependencies:
       - picomatch
     dev: true
@@ -1581,8 +1581,8 @@ packages:
       prelude-ls: 1.2.1
     dev: true
 
-  /typescript@5.6.3:
-    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+  /typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
