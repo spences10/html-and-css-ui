@@ -28,10 +28,10 @@ importers:
         version: 4.0.0(eslint@9.20.0)(svelte@4.2.19)
       prettier:
         specifier: ^3.4.2
-        version: 3.4.2
+        version: 3.5.2
       prettier-plugin-svelte:
         specifier: ^3.3.3
-        version: 3.3.3(prettier@3.4.2)(svelte@4.2.19)
+        version: 3.3.3(prettier@3.5.2)(svelte@4.2.19)
       svelte:
         specifier: ^4.2.19
         version: 4.2.19
@@ -862,8 +862,8 @@ packages:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
 
-  prettier@3.4.2:
-    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
+  prettier@3.5.2:
+    resolution: {integrity: sha512-lc6npv5PH7hVqozBR7lkBNOGXV9vMwROAPlumdBkX0wTbbzPu/U1hk5yL8p2pt4Xoc+2mkT8t/sow2YrV/M5qg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1019,8 +1019,8 @@ packages:
       yaml:
         optional: true
 
-  vitefu@1.0.4:
-    resolution: {integrity: sha512-y6zEE3PQf6uu/Mt6DTJ9ih+kyJLr4XcSgHR2zUkM8SWDhuixEJxfJ6CZGMHh1Ec3vPLoEA0IHU5oWzVqw8ulow==}
+  vitefu@1.0.5:
+    resolution: {integrity: sha512-h4Vflt9gxODPFNGPwp4zAMZRpZR7eslzwH2c5hn5kNZ5rhnKyRJ50U+yGCdc2IRaBs8O4haIgLNGrV5CrpMsCA==}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
     peerDependenciesMeta:
@@ -1334,7 +1334,7 @@ snapshots:
       magic-string: 0.30.17
       svelte: 4.2.19
       vite: 6.1.0
-      vitefu: 1.0.4(vite@6.1.0)
+      vitefu: 1.0.5(vite@6.1.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -1774,12 +1774,12 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-svelte@3.3.3(prettier@3.4.2)(svelte@4.2.19):
+  prettier-plugin-svelte@3.3.3(prettier@3.5.2)(svelte@4.2.19):
     dependencies:
-      prettier: 3.4.2
+      prettier: 3.5.2
       svelte: 4.2.19
 
-  prettier@3.4.2: {}
+  prettier@3.5.2: {}
 
   punycode@2.3.1: {}
 
@@ -1926,7 +1926,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitefu@1.0.4(vite@6.1.0):
+  vitefu@1.0.5(vite@6.1.0):
     optionalDependencies:
       vite: 6.1.0
 
